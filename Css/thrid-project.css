@@ -1340,6 +1340,11 @@ header .big-menu .menu .links li a:hover::before {
     border: 1px solid #ddd;
     justify-content: center;
 }
+@media (max-width:991px) {
+    .videos .container .playlists {
+        flex-direction: column;
+    }
+}
 .videos .container .playlists .top-videos{
     min-width: 300px;
 }
