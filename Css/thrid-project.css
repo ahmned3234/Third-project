@@ -1237,23 +1237,22 @@ header .big-menu .menu .links li a:hover::before {
     position: relative;
     transform: translateY(-20px);
 }
-.pricing .container .label::after {
-    content: "Most Popular";
+.pricing .container .label {
     position: absolute;
-    top: 50px;
+    writing-mode: vertical-rl;
     background-color: var(--main-color);
-    padding: 9px 25px 10px 11px;
+    padding: 10px 10px 35px 10px;
+    width: 40px;
     color: white;
     font-weight: bold;
     font-size: 18px;
-    right: -26px;
-    transform: rotate(90deg);
+    right: 20px;
 }
 .pricing .container .label::before {
     content: "";
     position: absolute;
-    top: 120px;
-    right: 25px;
+    bottom: -5px;
+    right: 0;
     border-color: var(--main-color) var(--main-color) white var(--main-color);
     border-width: 20px;
     border-style: solid;
