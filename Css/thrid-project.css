@@ -1246,9 +1246,9 @@ header .big-menu .menu .links li a:hover::before {
 .pricing .container .label::before {
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: 0px;
     right: 0;
-    border-color: var(--main-color) var(--main-color) white var(--main-color);
+    border-color: transparent transparent white;
     border-width: 20px;
     border-style: solid;
 }
