@@ -496,20 +496,13 @@ header .big-menu .menu .links li a:hover::before {
     animation: flashing .7s;
 }
 @keyframes flashing {
-    0% {
-        width: 30%;
-        height: 50%;
-        opacity: 1;
-    }
-    50% {
-        width: 100%;
-        height: 100%;
+    0%,40% {
         opacity: 1;
     }
     100% {
-        width: 100%;
-        height: 100%;
         opacity: 0;
+        width: 200%;
+        height: 200%;
     }
 }
 .gallery .container .image:hover img {
@@ -603,7 +596,7 @@ header .big-menu .menu .links li a:hover::before {
 .features .time h2::after{
     content: "";
     position: absolute;
-    background-color: #4CAF50;
+    background-color: #009688;
     width: 70%;
     height: 5px;
 }
@@ -632,52 +625,41 @@ header .big-menu .menu .links li a:hover::before {
     font-weight: bold;
     border-radius: 6px;
 }
-.features .box:hover a {
-    color: white;
-    transition: var(--main-transition);
-}
 .features .quality a{
     border: 3px solid #f44036;
-    border-color: #f44036;
     color: #f44036;
+    background: linear-gradient(to right, #f44036 50%,white 50% );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: var(--main-transition);
 }
 .features .time a{
-    border: 3px solid #4CAF50;
-    border-color: #4CAF50;
-    color: #4CAF50;
+    border: 3px solid #009688;
+    color: #009688;
+    background: linear-gradient(to right, #009688 50%,white 50% );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: var(--main-transition);
 }
 .features .passion a{
     border: 3px solid #03A9F4;
-    border-color: #03A9F4;
     color: #03A9F4;
-}
-.features .box a:after {
-    content: "";
-    z-index: -2;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0%;
-    height: 100%;
+    background: linear-gradient(to right, #03A9F4 50%,white 50% );
+    background-size: 200% 100%;
+    background-position: right bottom;
     transition: var(--main-transition);
 }
-.features .quality:hover a::after{
-    content: "";
-    position: absolute;
-    background-color: #f44036;
-    width: 100%;
+.features .quality:hover a{
+    background-position: left bottom;
+    color: white;
 }
-.features .time:hover a::after{
-    content: "";
-    position: absolute;
-    background-color: #4CAF50;
-    width: 100%;
+.features .time:hover a{
+    background-position: left bottom;
+    color: white;
 }
-.features .passion:hover a::after{
-    content: "";
-    position: absolute;
-    background-color: #03A9F4;
-    width: 100%;
+.features .passion:hover a{
+    background-position: left bottom;
+    color: white;
 }
 /* End Features */
 /* Start testimonials */
